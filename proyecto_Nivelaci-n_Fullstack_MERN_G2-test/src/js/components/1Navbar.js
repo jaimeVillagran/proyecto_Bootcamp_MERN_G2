@@ -1,5 +1,5 @@
 const Navbar = () => {
-    return `
+	return `
     <nav class="nav">
         <img src="public/assets/logo.png" alt="Escalab" />
 
