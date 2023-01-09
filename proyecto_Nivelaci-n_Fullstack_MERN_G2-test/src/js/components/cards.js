@@ -1,8 +1,8 @@
-const ItemProducts = ({ grid, name, price, img }) => {
-    return `
-    <div class="${grid}">
+const cards = ({ Id, name, price, img }) => {
+	return `
+    <div class="${Id}">
         <div class="card">
-            <img id="test" src="public/imageProducts/${img}" alt="" class="card__image" />
+            <img id="test" src="./public/imageProducts/${img}" alt="" class="card__image" />
             <div class="card__body">
                 <h2 class="card__b--title">${name}</h2>
                 <div class="card__info">
@@ -21,4 +21,4 @@ const ItemProducts = ({ grid, name, price, img }) => {
     `;
 };
 
-export { ItemProducts };
+export { cards };

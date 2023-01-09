@@ -1,9 +1,9 @@
 //Import hash router
-import { router } from './router/index.js';
+import { router } from "./router/index.js";
 
 const principalFunction = () => {
-    location.hash = 'home';
+	location.hash = "home";
 };
 
-window.addEventListener('load', principalFunction);
-window.addEventListener('hashchange', () => router(location.hash));
+window.addEventListener("load", principalFunction);
+window.addEventListener("hashchange", () => router(location.hash));

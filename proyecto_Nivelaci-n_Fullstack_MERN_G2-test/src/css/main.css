@@ -8,6 +8,12 @@
     scroll-behavior: smooth;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 /* Variables css */
 :root {
     --darkBlue: #10172A;
@@ -39,9 +45,9 @@
 
 .contain__p--subtitle {
     width: 100%;
-    font-size: 16px;
+    font-size: 40px;
     text-align: center;
-    color: #6A7EB9;
+    color: var(--blue);
 }
 
 .contain__p--title {

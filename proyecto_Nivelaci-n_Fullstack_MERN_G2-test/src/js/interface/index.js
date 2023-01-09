@@ -1,8 +1,6 @@
 // Components import
-import { Navbar } from "../components/1Navbar.js";
-import { Header } from "../components/1Header.js";
-import { ContainerProduct } from "../components/ContainerProducts.js";
-import { Footer } from "../components/1Footer.js";
+
+import { ContProduct } from "../components/products.js";
 
 // Nodes import
 import { root } from "../nodes.js";
@@ -13,13 +11,11 @@ import { propsSections } from "../utils/data.js";
 // This templates or complete interface load each component for a view depending the route
 const Home = () => {
 	// Function componentn invoques
-	/*const navbar = Navbar();*/
-	/*const header = Header();*/
-	const sections = propsSections.map((element) => ContainerProduct(element));
-	/*const footer = Footer();*/
+
+	const sections = propsSections.map((element) => ContProduct(element));
 
 	// Principal component who save the components
-	const template = [, ...sections];
+	const template = [...sections];
 
 	root.innerHTML = template.join("");
 };
